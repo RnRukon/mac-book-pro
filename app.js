@@ -44,7 +44,7 @@ function customize(product, extra) {
         deliveryCharge.innerText = 20;
 
     }
-
+    discount();
 }
 
 
@@ -108,14 +108,12 @@ function discount() {
 document.getElementById('memory-unified-8Gb-Btn').addEventListener('click', function () {
     customize('8GB', 'extra');
     totalPrice();
-    discount();
 });
 
 /*------------- 16GB unified memory button----------------*/
 document.getElementById('memory-unified-16GB-Btn').addEventListener('click', function () {
     customize('16GB', 'extra');
     totalPrice();
-    discount();
 });
 
 /* ---------------256GB SSD storage button -----------------------*/
@@ -123,7 +121,6 @@ document.getElementById('storage-ssd-256GB-Btn').addEventListener('click', funct
 
     customize('256GB', 'extra');
     totalPrice();
-    discount();
 });
 
 /*------------------ 512GB SSD storage button -----------------*/
@@ -131,7 +128,6 @@ document.getElementById('storage-ssd-512GB-Btn').addEventListener('click', funct
 
     customize('512gb', 'extra');
     totalPrice();
-    discount();
 });
 
 
@@ -139,7 +135,6 @@ document.getElementById('storage-ssd-512GB-Btn').addEventListener('click', funct
 document.getElementById('storage-ssd-1TB-Btn').addEventListener('click', function () {
     customize("1TB", 'extra');
     totalPrice();
-    discount();
 });
 
 /*-------------- Friday,Aug 25 FREE Prime Delivery button -------------------*/
@@ -147,14 +142,13 @@ document.getElementById('friday-Aug-25-free-delivery-Btn').addEventListener('cli
 
     customize('friday');
     totalPrice();
-    discount();
+    // discount();
 });
 
 /*-------------- Friday,Aug,21 Delivery charge $20 button -------------------*/
 document.getElementById('friday-agu-21-charge-btn').addEventListener('click', function () {
     customize(20);
     totalPrice();
-    discount();
 });
 
 /*-------------- Add Promo Code Apply button -------------------*/
